@@ -1,0 +1,17 @@
+# compose 2 is enough for this file
+version: '2'
+
+services:
+  watchdog-build:
+    image: microsoft/dotnet:2.0.3-sdk-jessie
+    volumes:
+      - .:/sources
+    working_dir: /sources/MicroserviceArchitecture.Monitoring.Watchdog
+    command: /bin/bash -c "dotnet restore && dotnet publish -c Release -o ./obj/Docker/publish"
+
+  messagegenerator-build:
+    image: microsoft/dotnet:2.0.3-sdk-jessie
+    volumes:
+      - .:/sources
+    working_dir: /sources/MicroserviceArchitecture.Monitoring.MessageGenerator
+    command: /bin/bash -c "dotnet restore && dotnet publish -c Release -o ./obj/Docker/publish"

@@ -1,0 +1,17 @@
+.env
+.vs
+
+bin
+obj
+
+MicroserviceArchitecture.Monitoring.Tests/bin
+MicroserviceArchitecture.Monitoring.Tests/obj
+
+MicroserviceArchitecture.Monitoring.Watchdog/bin
+MicroserviceArchitecture.Monitoring.Watchdog/obj
+
+MicroserviceArchitecture.Monitoring.Core/bin
+MicroserviceArchitecture.Monitoring.Core/obj
+
+MicroserviceArchitecture.Monitoring.Messagegenerator/bin
+MicroserviceArchitecture.Monitoring.Messagegenerator/obj

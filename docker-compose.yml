@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  watchdog:
+    image: microservice/watchdog
+    build:
+      context: ./MicroserviceArchitecture.Monitoring.Watchdog
+      dockerfile: Dockerfile
+    environment:
+      EnvironmentTag: ${EnvironmentTag}
+      AzureRegionTag: ${AzureRegionTag}
+    ports:
+      - '9200:9200'
+
+  watchdog-message-generator:
+    image: microservice/message-generator
+    build:
+      context: ./MicroserviceArchitecture.Monitoring.MessageGenerator
+      dockerfile: Dockerfile
+    environment:
+      EnvironmentTag: ${EnvironmentTag}
+      AzureRegionTag: ${AzureRegionTag}
+      EventHubSendConnectionString: ${EventHubSendConnectionString}
+
+networks:
+  default:
+    external:
+      name: local_development_network

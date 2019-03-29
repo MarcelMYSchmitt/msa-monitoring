@@ -1,0 +1,13 @@
+# compose 2 is enough for this file
+version: '2'
+
+services:
+  monitoring-tests:
+    image: microsoft/dotnet:2.0.3-sdk-jessie
+    volumes:
+      - .:/sources
+    working_dir: /sources/MicroserviceArchitecture.Monitoring.Tests
+    
+    # -fx-version is a fix for https://github.com/xunit/xunit/issues/1573
+    command: /bin/bash -c "dotnet restore && dotnet xunit -trait Category=Unit --fx-version 2.0.3 -xml test-results.xml"
+    

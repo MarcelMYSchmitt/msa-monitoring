@@ -1,0 +1,4 @@
+name: msa-monitoring-watchdog-message-generator
+version: 1.0.0
+appVersion: 1.0.0
+description: Deployment for the monitoring service

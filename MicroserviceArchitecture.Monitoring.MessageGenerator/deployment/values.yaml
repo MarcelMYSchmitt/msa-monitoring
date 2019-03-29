@@ -1,0 +1,11 @@
+revisionHistoryLimit: 0
+
+# Deployment
+DeploymentName: messagegenerator
+Team: msa
+ImageRegistry: mswedevmsaacr.azurecr.io
+ImageVersion: latest
+RequestsMemory: 128Mi
+RequestsCpu: 250m
+LimitsMemory: 128Mi
+LimitsCpu: 250m

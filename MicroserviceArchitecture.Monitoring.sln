@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceArchitecture.Monitoring.MessageGenerator", "MicroserviceArchitecture.Monitoring.MessageGenerator\MicroserviceArchitecture.Monitoring.MessageGenerator.csproj", "{AB5814C4-5315-4B5E-8880-BA7BDF854132}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceArchitecture.Monitoring.Watchdog", "MicroserviceArchitecture.Monitoring.Watchdog\MicroserviceArchitecture.Monitoring.Watchdog.csproj", "{872773EE-DAB4-4542-83AD-352E59615ACC}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A1D6B144-C206-4A89-A59D-625729E87B6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceArchitecture.Monitoring.Core", "MicroserviceArchitecture.Monitoring.Core\MicroserviceArchitecture.Monitoring.Core.csproj", "{FBBD64D6-FD3D-43DC-AC11-DD36EC4BEE41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroserviceArchitecture.Monitoring.Tests", "MicroserviceArchitecture.Monitoring.Tests\MicroserviceArchitecture.Monitoring.Tests.csproj", "{BF6B487F-35E2-493E-9792-84DDA465CB5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB5814C4-5315-4B5E-8880-BA7BDF854132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB5814C4-5315-4B5E-8880-BA7BDF854132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB5814C4-5315-4B5E-8880-BA7BDF854132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB5814C4-5315-4B5E-8880-BA7BDF854132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{872773EE-DAB4-4542-83AD-352E59615ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{872773EE-DAB4-4542-83AD-352E59615ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{872773EE-DAB4-4542-83AD-352E59615ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{872773EE-DAB4-4542-83AD-352E59615ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D6B144-C206-4A89-A59D-625729E87B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D6B144-C206-4A89-A59D-625729E87B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D6B144-C206-4A89-A59D-625729E87B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D6B144-C206-4A89-A59D-625729E87B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBBD64D6-FD3D-43DC-AC11-DD36EC4BEE41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBBD64D6-FD3D-43DC-AC11-DD36EC4BEE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBBD64D6-FD3D-43DC-AC11-DD36EC4BEE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBBD64D6-FD3D-43DC-AC11-DD36EC4BEE41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF6B487F-35E2-493E-9792-84DDA465CB5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF6B487F-35E2-493E-9792-84DDA465CB5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF6B487F-35E2-493E-9792-84DDA465CB5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF6B487F-35E2-493E-9792-84DDA465CB5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E41D8D3-1535-452A-80A3-BF3D34AE9D9D}
+	EndGlobalSection
+EndGlobal
